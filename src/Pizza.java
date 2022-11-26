@@ -1,5 +1,5 @@
 public class Pizza {
-    private enum sizes {Small, Meduim, Large}
+    private enum sizes {Small, Medium, Large}
     private sizes size;
     private int meatCount;
     private int vegCount;
@@ -7,7 +7,7 @@ public class Pizza {
 
     //default constructor for when no params are passed
     public Pizza(){
-        size = sizes.Meduim;
+        size = sizes.Medium;
         meatCount = 0;
         vegCount = 0;
         isVegan = false;
@@ -21,7 +21,7 @@ public class Pizza {
         if(size.equalsIgnoreCase("small")){
             this.size = sizes.Small;
         } else if(size.equalsIgnoreCase("medium")){
-            this.size = sizes.Meduim;
+            this.size = sizes.Medium;
         } else if(size.equalsIgnoreCase("large")){
             this.size = sizes.Large;
         } else {
@@ -35,7 +35,7 @@ public class Pizza {
         double cost = 0;
         if(size == sizes.Small){
             cost += 10;//Small pizza
-        } else if (size == sizes.Meduim){
+        } else if (size == sizes.Medium){
             cost += 12;//Med pizza
         } else {
             cost += 14;//Large pizza
@@ -89,8 +89,8 @@ public class Pizza {
     public String getSize(){
         if(size == sizes.Small){
             return "small";
-        } else if(size == sizes.Meduim){
-            return "meduim";
+        } else if(size == sizes.Medium){
+            return "Medium";
         } else{
             return "large";
         }
