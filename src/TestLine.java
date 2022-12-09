@@ -1,5 +1,5 @@
-import javax.sound.sampled.Line;
-//000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
 
 
 public class TestLine {
@@ -8,9 +8,8 @@ public class TestLine {
         Student ava = new Student("Seating", "Available");
         Student joe = new Student("Obama", "Joseph");
         Student jon = new Student("Snow", "Jonathan");
-        Student ted = new Student("Trivago", "Hotel");
+        Student ted = new Student("Trivalent", "Ted-rick");
         Student harry = new Student("Davidson", "Hardly");
-        Student ip = new Student("11 pro", "Iphone");
 
         Student[] someStudents = {jeff, ava, joe, jon, ted};
         LineAtOfficeHour theLine = new LineAtOfficeHour(someStudents);
